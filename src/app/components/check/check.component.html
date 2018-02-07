@@ -1,0 +1,30 @@
+
+<form #checkForm="ngForm" (ngSubmit)="onSubmit(checkForm)">
+
+        <div class="col">
+
+            <div class="form-check">
+                <input class="form-check-input" name="check1" type="checkbox" value="1" id="check1">
+                <label class="form-check-label text-info" for="check1">
+                    Elige 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="check2" type="checkbox" value="2" id="check2">
+                <label class="form-check-label text-info" for="check2">
+                    Elige 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="check3" type="checkbox" value="3" id="check3">
+                <label class="form-check-label text-info" for="check3">
+                    Elige 3
+                </label>
+            </div>
+    
+            <button type="submit" class="btn btn-info btn-block mt-sm">
+                Enviar
+            </button>
+        </div>
+    
+    </form>

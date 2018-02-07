@@ -1,0 +1,21 @@
+<form #selectForm="ngForm" (ngSubmit)="onSubmit(selectForm)">
+
+    <div class="col">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+            </div>
+            <select class="custom-select text-info" name="sel" id="inputGroupSelect01">
+                <option selected>Elige...</option>
+                <option value="1">Verde</option>
+                <option value="2">Rojo</option>
+                <option value="3">Amarillo</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-info btn-block mt-sm">
+            Enviar
+        </button>
+    </div>
+
+</form>

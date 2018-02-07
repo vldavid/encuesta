@@ -1,0 +1,28 @@
+<form #inputForm="ngForm" (ngSubmit)="onSubmit(inputForm)">
+
+    <div class="col">
+        <div class="form-group">
+            <label class="text-info">Descripción</label>
+            <input type="input" name="name" [(ngModel)]="opt.name"  class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-info btn-block mt-sm">
+            Enviar
+        </button>
+    </div>
+
+
+    <div class="col mt-md">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+            </div>
+            <select class="custom-select text-info" name="sel" id="inputGroupSelect01">
+                <option selected>Elige...</option>
+                <option *ngFor="let op of optArr" value="1">{{ op.name }}</option>
+            </select>
+        </div>
+
+    </div>
+
+</form>
